@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="541.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.gabriel.schedulingapplication.Controllers.AddAppointmentController">
+   <children>
+      <Label layoutX="34.0" layoutY="26.0" text="Add Appointment">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="77.0" text="ID" />
+      <Label layoutX="34.0" layoutY="114.0" text="Title" />
+      <Label layoutX="34.0" layoutY="151.0" text="Type" />
+      <Label layoutX="34.0" layoutY="188.0" text="Description" />
+      <Label layoutX="34.0" layoutY="225.0" text="Location" />
+      <Label layoutX="34.0" layoutY="262.0" text="Start Date" />
+      <Label layoutX="34.0" layoutY="299.0" text="Start Time" />
+      <Label layoutX="34.0" layoutY="336.0" text="End  Date" />
+      <Label layoutX="34.0" layoutY="373.0" text="End Time" />
+      <Label layoutX="34.0" layoutY="410.0" text="Customer ID" />
+      <Label layoutX="34.0" layoutY="447.0" text="User ID" />
+      <Label layoutX="34.0" layoutY="484.0" text="Contact" />
+      <TextField fx:id="appointmentIDField" disable="true" editable="false" layoutX="126.0" layoutY="73.0" promptText="Auto Gen- Disabled" />
+      <TextField fx:id="appointmentTitleField" layoutX="126.0" layoutY="110.0" />
+      <TextField fx:id="appointmentTypeField" layoutX="126.0" layoutY="147.0" />
+      <TextField fx:id="appointmentDescriptionField" layoutX="126.0" layoutY="184.0" />
+      <TextField fx:id="appointmentLocationField" layoutX="126.0" layoutY="221.0" />
+      <DatePicker fx:id="appointmentStartDateField" layoutX="126.0" layoutY="258.0" prefHeight="25.0" prefWidth="161.0" />
+      <DatePicker fx:id="appointmentEndDateField" layoutX="126.0" layoutY="332.0" prefHeight="25.0" prefWidth="161.0" />
+      <ChoiceBox fx:id="customerIDField" layoutX="126.0" layoutY="406.0" prefHeight="25.0" prefWidth="161.0" />
+      <ChoiceBox fx:id="userIDField" layoutX="126.0" layoutY="443.0" prefHeight="25.0" prefWidth="161.0" />
+      <ChoiceBox fx:id="contactIDField" layoutX="126.0" layoutY="480.0" prefHeight="25.0" prefWidth="161.0" />
+      <Button fx:id="cancelButton" layoutX="429.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleCancelButton" text="Cancel" />
+      <Button fx:id="saveButton" layoutX="513.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleSaveButton" text="Save" />
+      <ComboBox fx:id="appointmentStartTimeField" layoutX="127.0" layoutY="295.0" prefHeight="25.0" prefWidth="161.0" />
+      <ComboBox fx:id="appointmentEndTimeField" layoutX="126.0" layoutY="369.0" prefHeight="25.0" prefWidth="161.0" />
+   </children>
+</AnchorPane>

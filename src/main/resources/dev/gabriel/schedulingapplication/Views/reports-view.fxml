@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="568.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.gabriel.schedulingapplication.Controllers.ReportsController">
+   <children>
+      <ComboBox fx:id="contactComboBox" layoutX="723.0" layoutY="60.0" onAction="#handleContactChoiceBox" prefWidth="150.0" promptText="Select Contact" />
+      <TableView fx:id="appointmentsByContactTable" layoutX="36.0" layoutY="96.0" prefHeight="174.0" prefWidth="837.0">
+        <columns>
+          <TableColumn fx:id="appointmentIDColumn" prefWidth="102.0" text="Appointment ID" />
+          <TableColumn fx:id="titleColumn" prefWidth="84.0" text="Title" />
+            <TableColumn fx:id="byContactTypeColumn" prefWidth="84.0" text="Type" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="137.0" text="Description" />
+            <TableColumn fx:id="startDateTimeColumn" prefWidth="140.0" text="Start Date/Time" />
+            <TableColumn fx:id="endDateTimeColumn" prefWidth="140.0" text="End Date/Time" />
+            <TableColumn fx:id="customerIDColumn" prefWidth="149.0" text="Customer ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="36.0" layoutY="25.0" text="Reports">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="63.0" text="Appointments By Contact">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="305.0" text="Appointments by month and type">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="509.0" layoutY="305.0" text="Customers By Country">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button fx:id="appointmentsButton" layoutX="788.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleAppointmentsButton" prefHeight="34.0" prefWidth="115.0" text="Appointments" />
+      <Button fx:id="customersButton" layoutX="788.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleCustomersButton" prefHeight="34.0" prefWidth="115.0" text="Customers" />
+      <Button fx:id="logoutButton" layoutX="788.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleLogoutButton" prefHeight="34.0" prefWidth="115.0" text="Log out" />
+      <TableView fx:id="customerCountriesTable" layoutX="460.0" layoutY="335.0" prefHeight="200.0" prefWidth="250.0">
+        <columns>
+          <TableColumn fx:id="countryColumn" prefWidth="126.0" text="Country" />
+          <TableColumn fx:id="totalCustomersColumn" prefWidth="123.0" text="Total Customers" />
+        </columns>
+      </TableView>
+      <TableView fx:id="appointmentsByMonthTypeTable" layoutX="38.0" layoutY="335.0" prefHeight="200.0" prefWidth="324.0">
+        <columns>
+          <TableColumn fx:id="monthColumn" prefWidth="112.0" text="Month" />
+          <TableColumn fx:id="typeColumn" prefWidth="117.0" text="Type" />
+            <TableColumn fx:id="totalColumn" prefWidth="94.0" text="Total" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

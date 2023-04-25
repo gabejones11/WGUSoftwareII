@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.gabriel.schedulingapplication.Controllers.LogInController">
+   <children>
+      <Label fx:id="loginLabel" alignment="CENTER" layoutX="270.0" layoutY="96.0" text="Login" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <TextField fx:id="usernameField" layoutX="220.0" layoutY="175.0" promptText="Username" />
+      <PasswordField fx:id="passwordField" layoutX="220.0" layoutY="232.0" promptText="Password" />
+      <Button fx:id="loginButton" alignment="CENTER" layoutX="276.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleLoginButton" text="Login" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="260.0" />
+      <Label fx:id="timeZoneDisplayLabel" layoutX="484.0" layoutY="369.0" text="America/Chicago">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="timeZoneLabel" alignment="CENTER" layoutX="381.0" layoutY="369.0" prefHeight="18.0" prefWidth="72.0" text="Time Zone :" AnchorPane.leftAnchor="381.0" AnchorPane.rightAnchor="127.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="exitButton" alignment="CENTER" layoutX="282.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleExitButton" text="Exit" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="260.0" />
+   </children>
+</AnchorPane>

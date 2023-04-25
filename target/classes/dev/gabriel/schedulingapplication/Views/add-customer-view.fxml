@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.gabriel.schedulingapplication.Controllers.AddCustomerController">
+   <children>
+      <Label layoutX="21.0" layoutY="23.0" text="Add Customer">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="80.0" text="ID" />
+      <Label layoutX="21.0" layoutY="117.0" text="Name" />
+      <Label layoutX="21.0" layoutY="154.0" text="Address" />
+      <Label layoutX="21.0" layoutY="191.0" text="Phone Number" />
+      <Label layoutX="21.0" layoutY="228.0" text="Country" />
+      <Label layoutX="21.0" layoutY="265.0" text="State/Providence" />
+      <Label layoutX="21.0" layoutY="302.0" text="Postal Code" />
+      <TextField fx:id="customerIDField" disable="true" layoutX="149.0" layoutY="79.0" promptText="Auto gen - disabled" />
+      <TextField fx:id="customerNameField" layoutX="149.0" layoutY="113.0" promptText="Customer Name" />
+      <TextField fx:id="customerAddressField" layoutX="149.0" layoutY="150.0" promptText="Address" />
+      <TextField fx:id="customerPhoneNumberField" layoutX="149.0" layoutY="188.0" promptText="Phone Number" />
+      <TextField fx:id="customerPostalCodeField" layoutX="149.0" layoutY="298.0" promptText="Postal Code" />
+      <Button fx:id="saveButton" layoutX="524.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleSaveButton" text="Save" />
+      <Button fx:id="cancelButton" layoutX="446.0" layoutY="361.0" onAction="#handleCancelButton" mnemonicParsing="false" text="Cancel" />
+      <ComboBox fx:id="customerCountryComboBox" layoutX="149.0" layoutY="224.0" prefHeight="25.0" prefWidth="161.0" onAction="#handleCountrySelected" promptText="Country" />
+      <ComboBox fx:id="customerStateProvidenceComboBox" layoutX="149.0" layoutY="261.0" prefHeight="25.0" prefWidth="161.0" promptText="State/Providence" />
+   </children>
+</AnchorPane>
